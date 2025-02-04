@@ -57,7 +57,7 @@ def visualize_data(df: pd.DataFrame) -> None:
         sns.scatterplot(data=df, x=feature, y=target_variable, ax=axs[i])
         axs[i].set_title(f'Scatter plot of {feature} vs Charge_Left_Percentage')
     plt.tight_layout()
-    plt.savefig('graphs/scatter_plots.png')
+    plt.savefig('C:/Users/Juan/Desktop/WORKSHOP/dtw-lab/graphs/scatter_plots.png')
 
     features = ['Avg_Operating_Temperature','Days_Since_Production', 'Current_Voltage']
     fig, axs = plt.subplots(3, 1, figsize=(15, 15))
@@ -65,7 +65,7 @@ def visualize_data(df: pd.DataFrame) -> None:
         sns.boxplot(data=df, x=feature, ax=axs[i])
         axs[i].set_title(f'Box plot of {feature} vs Charge_Left_Percentage')
     plt.tight_layout()
-    plt.savefig('graphs/boxplots.png')
+    plt.savefig('C:/Users/Juan/Desktop/WORKSHOP/dtw-lab/graphs/boxplots.png')
 
     ## do the same with frequency histograms
     features = ['Battery_Size', 'Discharge_Speed', 'Manufacturer']
@@ -74,7 +74,7 @@ def visualize_data(df: pd.DataFrame) -> None:
         sns.histplot(data=df, x=feature, ax=axs[i])
         axs[i].set_title(f'Frequency histogram of {feature}')
     plt.tight_layout()
-    plt.savefig('graphs/histograms.png')
+    plt.savefig('C:/Users/Juan/Desktop/WORKSHOP/dtw-lab/graphs/histograms.png')
 
 
 
